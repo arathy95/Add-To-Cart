@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c14b8c76e97541bbbab65a6327474e09" Name="Diagram1">
+        <EntityTypeShape EntityType="Database1Model.tbl_AdminLogin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.tbl_Category" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="Database1Model.tbl_Country" Width="1.5" PointX="3.75" PointY="1.125" />
+        <EntityTypeShape EntityType="Database1Model.tbl_State" Width="1.5" PointX="6" PointY="0.875" />
+        <EntityTypeShape EntityType="Database1Model.tbl_SubCategory" Width="1.5" PointX="3" PointY="3.875" />
+        <AssociationConnector Association="Database1Model.FK__tbl_SubCa__FKcat__403A8C7D" />
+        <AssociationConnector Association="Database1Model.FK__tbl_State__FKcou__38996AB5" />
+        <EntityTypeShape EntityType="Database1Model.tbl_Product" Width="1.5" PointX="5.25" PointY="4.625" />
+        <AssociationConnector Association="Database1Model.FK__tbl_Produ__FKsub__49C3F6B7" />
+        <EntityTypeShape EntityType="Database1Model.tbl_User" Width="1.5" PointX="10.5" PointY="5.625" />
+        <EntityTypeShape EntityType="Database1Model.tbl_City" Width="1.5" PointX="8.25" PointY="0.875" />
+        <AssociationConnector Association="Database1Model.FK__tbl_City__FKcity__3B75D760" />
+        <AssociationConnector Association="Database1Model.FK__tbl_User__FKcity__5CD6CB2B" />
+        <EntityTypeShape EntityType="Database1Model.tbl_Cart" Width="1.5" PointX="12.75" PointY="5.375" />
+        <AssociationConnector Association="Database1Model.FK__tbl_Cart__FKprod__5FB337D6" />
+        <AssociationConnector Association="Database1Model.FK__tbl_Cart__FKuser__60A75C0F" />
+        <EntityTypeShape EntityType="Database1Model.tbl_UserLogin" Width="1.5" PointX="0.75" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

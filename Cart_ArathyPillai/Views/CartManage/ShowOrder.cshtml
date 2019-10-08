@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Cart_ArathyPillai.Models.tbl_Cart>
+
+@{
+    ViewBag.Title = "ShowOrder";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>ShowOrder</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.orderplaces)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbl_Product.productname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbl_User.username)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.orderplaces)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbl_Product.productname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbl_User.username)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.cartid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.cartid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.cartid })
+        </td>
+    </tr>
+}
+
+</table>

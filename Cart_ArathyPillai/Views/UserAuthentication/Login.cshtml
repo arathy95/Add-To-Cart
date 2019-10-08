@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Login</h2>
+
+<form action="@Url.Action("Login","UserAuthentication")" method="post">
+    <table>
+        <tr>
+            <td>Email ID: </td>
+            <td><input type="text" id="useremailid" name="useremailid" /></td>
+        </tr>
+        <tr>
+            <td>Password: </td>
+            <td><input type="password" id="userpassword" name="userpassword" /></td>
+        </tr>
+    </table>
+    <input type="submit" value="Login" class="btn btn-primary" />
+</form>

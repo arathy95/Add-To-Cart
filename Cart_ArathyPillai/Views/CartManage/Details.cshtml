@@ -1,0 +1,51 @@
+﻿@model Cart_ArathyPillai.Models.tbl_Cart
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_Cart</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_Product.productname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_Product.productname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_User.username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_User.username)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cartid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

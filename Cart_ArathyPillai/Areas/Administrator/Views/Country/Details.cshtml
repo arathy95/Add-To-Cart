@@ -1,0 +1,27 @@
+﻿@model Cart_ArathyPillai.Models.tbl_Country
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_Country</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.countryname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.countryname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.countryid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

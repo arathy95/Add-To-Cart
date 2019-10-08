@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "LoginForAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>LoginForAdmin</h2>
+
+<form action="@Url.Action("LoginForAdmin","AdminLogin")" method="post">
+    <div class="form-group">
+        <label for="adminname">Email ID:</label>
+        <input type="text" class="form-control" id="emailid" placeholder="Enter email" name="emailid">
+    </div>
+    <div class="form-group">
+        <label for="adminpassword">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" name="AdminRememberMe"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
